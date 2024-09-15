@@ -1,0 +1,27 @@
+{
+  "name": "moonpad-mini",
+  "private": true,
+  "version": "0.0.1",
+  "author": {
+    "name": "oboard",
+    "email": "oboard@outlook.com"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "postinstall": "cp ./node_modules/@moonbit/moonpad/dist/lsp-server.js ./public/lsp-server.js"
+  },
+  "dependencies": {
+    "@moonbit/moonpad": "^0.0.9",
+    "vue": "^3.5.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.3",
+    "unocss": "^0.62.3",
+    "vite": "^5.4.1",
+    "vue-tsc": "^2.0.29"
+  }
+}
